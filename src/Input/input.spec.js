@@ -2,9 +2,17 @@ import React from "react";
 import Input from "./input";
 
 describe('Input component', () => {
-  it('should render Input component without props', () =>{
+  it('should render Input component', () =>{
     const component = shallow(<Input/>)
     expect(component).toMatchSnapshot()
+  })
+
+  it('should call onChange method', () => {
+    const mockCallBack = jest.fn()
+    const component = shallow(<Input onChange={mockCallBack}/>)
+    expect(mockCallBack.mock.calls.length).toBe(0)
+    component.find('.input').simulate('change')
+    expect(mockCallBack.mock.calls.length).toBe(1)
   })
 
   describe('defaultProps', () => {
