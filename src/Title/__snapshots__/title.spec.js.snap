@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ешеду component should render Ешеду component with props 1`] = `
+exports[`Title component should render Title component with props 1`] = `
 <h1
   className="title"
 >
@@ -8,7 +8,7 @@ exports[`Ешеду component should render Ешеду component with props 1`] 
 </h1>
 `;
 
-exports[`Ешеду component should render Ешеду component without props 1`] = `
+exports[`Title component should render Title component without props 1`] = `
 <h1
   className="title"
 >
