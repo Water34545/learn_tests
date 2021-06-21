@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ешеду component should render Ешеду component with props 1`] = `
+<h1
+  className="title"
+>
+  test 
+</h1>
+`;
+
+exports[`Ешеду component should render Ешеду component without props 1`] = `
+<h1
+  className="title"
+>
+  Simple title
+</h1>
+`;
