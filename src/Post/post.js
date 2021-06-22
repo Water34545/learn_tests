@@ -1,10 +1,11 @@
+import "./post.css";
 import React from "react";
 import PropTypes from "prop-types";
 
 const Post = ({ author, created_at, num_comments, title, points, url }) => (
   <li className="post">
     <div className="description">
-      <a href={url} className="title">
+      <a href={url} className="smTitle">
         {title}
       </a>
       <span className="text">{`${points} points`}</span>
